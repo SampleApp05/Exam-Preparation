@@ -1,66 +1,28 @@
-## Foundry
+# Soft-Uni-Advanced-Exam
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+Soft Uni Advanced Course Exam repo
 
-Foundry consists of:
+# Installation
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+NB! For Windows use WSL
+NB! Run forge install if needed after cloning
 
-## Documentation
+1. Install and run foundryup => curl -L https://foundry.paradigm.xyz | bash. Init a forge project => forge init
+2. Install hardhat => npm install --save-dev hardhat. Init a TS project => npx hardhat init
+3. Install dependencies => node update.js. Use flag -f/-h to install forge/hardhat only dependencies
+4. Add values for the following keys in the .env file
+   3.1 SEPOLIA_RPC_URL = https://eth-sepolia.g.alchemy.com/v2/your-key-here;
+   3.2 WALLET_PRIVATE_KEY = your-wallet-here;
+   3.3 ETHERSCAN_API_KEY = your-key-here;
 
-https://book.getfoundry.sh/
+# Tests
 
-## Usage
+# Deployment
 
-### Build
+# Contract Addresses
 
-```shell
-$ forge build
-```
+# On Chain Implementation and Tests
 
-### Test
-
-```shell
-$ forge test
-```
-
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+func_one => etherscan link
+func_two => etherscan link
+....
