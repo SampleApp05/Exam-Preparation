@@ -1,5 +1,5 @@
 {
-  "common": ["dotenv"],
+  "common": ["dotenv", "-g @remix-project/remixd"],
   "foundry": [
     "foundry-rs/forge-std",
     "OpenZeppelin/openzeppelin-foundry-upgrades",
